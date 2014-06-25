@@ -3,10 +3,8 @@
 import os
 try:
     import ast
-    from ast import NodeVisitor
 except ImportError:
     from flake8.util import ast
-    from ast import NodeVisitor
 
 from common_checker.base_checker import BaseChecker
 
@@ -56,9 +54,9 @@ class OpenERPManifestChecker(BaseChecker, ast.NodeVisitor):
     def make_error_tuple(self, code, node, *str_format):
         """Make an error tuple used by flake8
 
-        Uses input code to find corressponding property lookup
+        Uses input code to find corresponding property lookup
 
-        :param code: string of code number must be set as propety
+        :param code: string of code number must be set as property
         :param node: ast node source of error
         :param str_format: optional arguments for string formatting
 

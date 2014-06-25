@@ -4,10 +4,8 @@ import re
 
 try:
     import ast
-    from ast import NodeVisitor
 except ImportError:
     from flake8.util import ast
-    from ast import NodeVisitor
 
 from common_checker.base_checker import BaseChecker
 

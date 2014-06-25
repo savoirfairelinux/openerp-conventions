@@ -15,7 +15,7 @@ def load_tests(loader, tests, pattern):
 
 
 class ConventionCheckTest(unittest.TestCase):
-    """Root test class that initalize checker for given file"""
+    """Root test class that initialise checker for given file"""
 
     _file_name = None
     _file_path = None

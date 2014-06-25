@@ -24,11 +24,11 @@ class EmptyManifestChecker(ConventionCheckTest):
         for code in mandatory_codes:
             self.check_code(code, 21)
 
+
 class FaultManifestChecker(ConventionCheckTest):
 
     _file_path = 'faulty__openerp__.py'
     _file_name = '__openerp__.py'
-
 
     def test_O600(self):
         """Test code O600"""
@@ -37,7 +37,6 @@ class FaultManifestChecker(ConventionCheckTest):
     def test_O604(self):
         """Test code O604"""
         self.check_code('O604', 23)
-
 
 
 if __name__ == '__main__':

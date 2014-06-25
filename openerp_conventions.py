@@ -2,12 +2,11 @@
 """OpenERP community addons standard plugin for flake8"""
 from __future__ import absolute_import
 
-import common_checker
 from common_checker.base_checker import BaseChecker
 
 # When OpenERP version 8 API will be frozen
 # We will be able to do version toggle here
-import v7
+import v7  # NOQA
 
 __version__ = '0.0.1'
 
@@ -43,7 +42,7 @@ class OpenERPConventionsChecker(object):
 
         :param tree_root: Root ast node of the namespace
 
-        :returns: yeld list of errors codes
+        :returns: yield list of errors codes
 
         """
         for check in self.checks:

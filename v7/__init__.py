@@ -1,2 +1,2 @@
-from . import model_checker
-from . import manifest_checker
+from . import model_checker  # NOQA
+from . import manifest_checker  # NOQA

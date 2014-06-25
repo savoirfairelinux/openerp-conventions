@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
-#Taken from pep8-naming flake8 extention
+# Taken from pep8-naming flake8 extension
 from __future__ import with_statement
 from setuptools import setup, find_packages
+
 
 def get_version(fname='openerp_conventions.py'):
     with open(fname) as f:
         for line in f:
             if line.startswith('__version__'):
                 return eval(line.split('=')[-1])
+
 
 def get_long_description():
     descr = []
