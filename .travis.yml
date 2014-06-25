@@ -9,4 +9,5 @@ python:
 install:
     - pip install flake8
 script:
-    - python run_tests.py
+    - python setup.py test
+    - python setup.py install

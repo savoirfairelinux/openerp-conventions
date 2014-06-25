@@ -47,4 +47,5 @@ setup(
         'Topic :: Software Development :: Libraries :: OpenERP addons',
         'Topic :: Software Development :: Quality Assurance',
     ],
+    test_suite='tests',
 )
